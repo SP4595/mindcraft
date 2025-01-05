@@ -8,7 +8,7 @@ async function say(agent, message) {
     agent.bot.modes.behavior_log += message + '\n';
     if (agent.shut_up || !settings.narrate_behavior) return;
     agent.openChat(message);
-}
+} //在游戏中说话
 
 // a mode is a function that is called every tick to respond immediately to the world
 // it has the following fields:
